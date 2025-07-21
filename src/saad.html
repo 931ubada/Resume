@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task</title>
+  <style>
+    html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    }
+    body{
+    display:grid;
+    grid-template-rows:auto auto;
+    width:100%;
+    }
+
+    .d1{
+    background-color:yellow;
+    }
+    .d2{
+
+    color:white;
+    font-size:20px;
+    background-color:green;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+    .d3{
+    height:auto;
+    width:400px;
+    border:3px solid black;
+    text-align:center;
+    }
+    .d4{
+    color:white;
+    background-color:green;
+    margin-bottom:10px;
+    transition:background-color 0.5s;
+    }
+    .d4:hover{
+    background-color:black;
+    font-size:30px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="d1">1</div>
+  <div class="d2" >
+    <div class="d3">
+      <p>USER LOGIN</p>
+      <label>Username</label>
+      <input name="username" type="text" placeholder="enter ur username"><br><br>
+      <label>Password</label>
+      <input name="password" type="password" placeholder="enter ur password"><br><br>
+      <button class="d4">Submit</button>
+    </div>
+  </div>
+
+</body>
+</html>

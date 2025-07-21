@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
+        }
+
+        th, td {
+            border: 2px solid #000000;
+            background-color: #ffffff;
+            border-collapse: collapse;
+            width: 80px;
+            height: 45px;
+            padding: 10px;
+        }
+
+        th {
+            font-family: "Times New Roman";
+            font-size: 20px;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 25px;
+            font-family: "Times New Roman";
+            font-weight: bold;
+        }
+
+        .d1 {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .d2 {
+            background-color: #5c8af4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .d3 {
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .d4 {
+            background-color: #f3be84;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .d21 {
+            border-radius: 10px;
+            border: 3px solid #000000;
+            display: inline-block;
+            overflow: hidden;
+            background-color: #54f4a3;
+        }
+
+        p {
+            font-family: "Times New Roman";
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            margin: 0;
+        }
+
+        .present {
+            border: 2px solid #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 225px;
+            height: 225px;
+            margin: 10px auto;
+            background-color: #fff;
+        }
+
+        .present img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAST Section -->
+<div class="d1">
+    <p>PAST</p>
+    <div class="present">
+        <img src="past_img.png" alt="Past Image">
+    </div>
+</div>
+
+<!-- Student List Section -->
+<div class="d2">
+    <div class="d21">
+        <p class="heading">Student List</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>USN</th>
+                <th>Photo</th>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>1VJ21CS0**</td>
+                <td><img src="ali_img.jpg" style="height:auto; width:150px;" alt="Ali"></td>
+            </tr>
+            <tr>
+                <td>Irfan</td>
+                <td>1VJ21CS0**</td>
+                <td><img src="irfan_img.jpg" style="height:auto; width:65px;" alt="Irfan"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Task Board Section -->
+<div class="d3">
+    <div class="d21">
+        <p class="heading">Task Board</p>
+        <table>
+            <tr>
+                <th>Topic</th>
+                <th>To Do</th>
+                <th>In Progress</th>
+                <th>Done</th>
+            </tr>
+            <tr>
+                <td>JAVA</td>
+                <td>Revision</td>
+                <td>JAVA 8</td>
+                <td>Theory</td>
+            </tr>
+            <tr>
+                <td>CLI</td>
+                <td>Git</td>
+                <td>commands</td>
+                <td>Basic</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- PRESENT Section -->
+<div class="d4">
+    <p>PRESENT</p>
+    <div class="present">
+        <img src="img_8.png" alt="Present Image">
+    </div>
+</div>
+
+</body>
+</html>

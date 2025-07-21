@@ -1,0 +1,19 @@
+h2{
+color:blue;
+size:40px;
+}
+.demo{
+    font-size:20px;
+    color:brown;
+    width:200px;
+    background-color:silver;
+}
+.submit{
+    height:25px;
+    width:100px;
+    text-align:center;
+    font-size:20px;
+    border:bold;
+    left-margin:100px;
+
+}

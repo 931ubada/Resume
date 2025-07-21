@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Resume</title>
+    <style>
+        * {
+          font-family: "Times New Roman", serif;
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+        .full {
+          width: 700px;
+          height: 100vh;
+          background-color: #e0f2f1;
+          border: 2px solid #000;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .header {
+          font-size: 20px;
+          text-align: center;
+          text-decoration: underline;
+          font-weight: bold;
+          padding: 5px 0;
+          flex: 0 0 auto;
+        }
+
+        .grid {
+          display: grid;
+          grid-template-columns: 250px 444px;
+          gap: 6px;
+        }
+
+        .col1 {
+          width: 250px;
+          height: 610px;
+          background-color: #d4e157;
+          padding: 8px;
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
+        }
+
+        .img {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 8px;
+        }
+
+        img {
+          border-radius: 50%;
+          border: 2px solid #000;
+          width: 80px;
+          height: 80px;
+        }
+
+        .name {
+          text-align: center;
+          font-weight: bold;
+          font-size: 23px;
+          margin-bottom: 8px;
+        }
+
+        .col1 p {
+          margin: 3px 0;
+        }
+
+        .section-title {
+            font-size:20px;
+          font-weight: bold;
+          text-decoration: underline;
+          margin: 6px 0 3px;
+        }
+
+        .col2 {
+          width: 442px;
+          height: 610px;
+          background-color: #abebc6;
+          border: 2px solid #000;
+          padding: 8px;
+          font-size: 13px;
+          overflow: hidden;
+        }
+
+        .col2 p {
+          margin: 4px 0;
+        }
+
+        ul {
+          margin: 4px 0 0 16px;
+          padding-left: 0;
+        }
+
+        li {
+            font-size:18px;
+          margin-bottom: 3px;
+        }
+        p
+        {
+         font-size:18px;
+        }
+    </style>
+</head>
+<body>
+<div class="full">
+    <div class="header">JAVA FULL STACK DEVELOPER</div>
+    <div class="grid">
+        <!-- Left Column -->
+        <div class="col1">
+            <div class="img">
+                <img src="ubada_img.jpg" alt="Profile Photo" />
+            </div>
+            <div class="name">Md Ubada</div>
+            <p><strong>📞</strong> +91-9319136919</p>
+            <p><strong>📧</strong> mdubada489@gmail.com</p>
+            <p><strong>📍</strong> Bangalore, Karnataka</p>
+
+            <p class="section-title">Skills</p>
+            <p>C, C++, Python</p>
+            <p>DSA, OOPs, Data Science</p>
+            <p>GitHub, Jenkins, YAML</p>
+            <p>IBM Cloud, MS Office</p>
+
+            <p class="section-title">Traits</p>
+            <p>Independent, Proactive</p>
+            <p>Quick Learner, Detail-Oriented</p>
+
+            <p class="section-title">DOB</p>
+            <p>07 February 2002</p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col2">
+            <p class="section-title">Objective</p>
+            <p>Aspiring Computer Science Engineer seeking an opportunity to apply my technical skills, problem-solving ability, and passion for innovation in a dynamic and growth-oriented organization. I aim to contribute meaningfully while learning and upholding integrity.</p>
+
+            <p class="section-title">Education</p>
+            <p><strong>B.E. CSE</strong> – Vijaya Vittala Institute of Technology (VTU), CGPA: 8.02 (Exp. 2025)</p>
+            <p><strong>PUC (PCMC)</strong> – REVA PU College, 92% (2021)</p>
+
+            <p class="section-title">Projects</p>
+            <ul>
+                <li>Car Price Prediction using Machine Learning</li>
+                <li>Face Mask Detection using OpenCV & Deep Learning</li>
+                <li>Calendar GUI Application using Python (Tkinter)</li>
+            </ul>
+
+            <p class="section-title">Internship</p>
+            <p><strong>AI DevOps Intern</strong> – NSDC & Rooman Technologies</p>
+            <ul>
+                <li>Deployed social networking site on IBM Cloud Kubernetes</li>
+                <li>Worked with Docker, Jenkins, YAML, Git</li>
+                <li>Hands-on with CI/CD pipelines & monitoring tools</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
